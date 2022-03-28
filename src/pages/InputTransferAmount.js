@@ -19,6 +19,12 @@ export const InputTransferAmount = () => {
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
+      console.log(`amount: ${amount}`)
+      console.log(`balance: ${balance}`)
+      console.log(`limit: ${limit}`)
+
+      console.log(`check balance: ${checkBalance}`)
+      console.log(`check limit: ${checkLimit}`)
       if (!checkBalance) {
         setFailLimit(false)
         setFailBalance(true)
@@ -30,14 +36,14 @@ export const InputTransferAmount = () => {
         setFailLimit(true)
         return
       }
-      
-     navigate("/success-transaction")
+
+       navigate("/success-transaction")
     }
   }
 
-  const checkBalance = amount <= balance
+  const checkBalance = parseInt(amount) <= parseInt(balance)
 
-  const checkLimit = amount <= limit
+  const checkLimit = parseInt(amount) <= parseInt(limit)
 
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen space-y-8">
