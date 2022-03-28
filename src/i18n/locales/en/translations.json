@@ -15,5 +15,6 @@
     "takeCard": "Take Your Card",
     "takeCardBtn": "Take the Card",
     "inputWithdrawAmount": "Enter Withdrawal Amount",
-    "takeMoney": "Please Take Your Money"
+    "takeMoney": "Please Take Your Money",
+    "minimumTransactions": "Minimum Transactions is Rp.50.000"
 }

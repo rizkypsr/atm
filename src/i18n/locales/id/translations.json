@@ -15,5 +15,6 @@
     "takeCard": "Silahkan Ambil Kartu Anda",
     "takeCardBtn": "Ambil Kartu",
     "inputWithdrawAmount": "Masukan Jumlah Penarikan",
-    "takeMoney": "Silahkan Ambil Uang Anda"
+    "takeMoney": "Silahkan Ambil Uang Anda",
+    "minimumTransactions": "Minimal Transaksi Adalah Rp.50.000"
 }

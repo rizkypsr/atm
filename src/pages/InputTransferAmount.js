@@ -5,6 +5,7 @@ import { Alert } from "../components/Alert"
 import { Card } from "../components/Card"
 import { TextInput } from "../components/TextInput"
 import { Title } from "../components/Title"
+import { AccountContext } from "../context/AccountContext"
 import { LocaleContext } from "../context/LocaleContext"
 
 export const InputTransferAmount = () => {
@@ -16,15 +17,10 @@ export const InputTransferAmount = () => {
   const limit = process.env.REACT_APP_LIMIT
   const navigate = useNavigate()
   const { t } = useContext(LocaleContext)
+  const { setAccount } = useContext(AccountContext)
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
-      console.log(`amount: ${amount}`)
-      console.log(`balance: ${balance}`)
-      console.log(`limit: ${limit}`)
-
-      console.log(`check balance: ${checkBalance}`)
-      console.log(`check limit: ${checkLimit}`)
       if (!checkBalance) {
         setFailLimit(false)
         setFailBalance(true)
@@ -37,7 +33,12 @@ export const InputTransferAmount = () => {
         return
       }
 
-       navigate("/success-transaction")
+      setAccount((acc) => ({
+        ...acc,
+        amount,
+      }))
+
+      navigate("/success-transfers")
     }
   }
 

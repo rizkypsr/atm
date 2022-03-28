@@ -8,9 +8,15 @@ import { useNavigate } from "react-router-dom"
 export const Transfers = () => {
   const navigate = useNavigate()
   const { setAccount } = useContext(AccountContext)
+  const [accountNumber, setAccountNumber] = useState()
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
+      setAccount((acc) => ({
+        ...acc,
+        accountNumber,
+      }))
+
       navigate("/transfers-amount")
     }
   }
@@ -23,7 +29,11 @@ export const Transfers = () => {
         <div className="flex items-center space-x-3">
           <TextInput className="w-20" onKeyDown={handleKeyDown} />
           <span>+</span>
-          <TextInput className="w-full" onKeyDown={handleKeyDown} />
+          <TextInput
+            className="w-full"
+            onKeyDown={handleKeyDown}
+            onChange={(e) => setAccountNumber(e.target.value)}
+          />
         </div>
       </Card>
 

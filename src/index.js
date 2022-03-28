@@ -16,6 +16,7 @@ import { PrintReceipt } from "./pages/PrintReceipt"
 import { TakeCard } from "./pages/TakeCard"
 import { WithdrawCash } from "./pages/WithdrawCash"
 import { TakeMoney } from "./pages/TakeMoney"
+import { SuccessTransfers } from "./pages/SuccessTransfers"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -29,6 +30,7 @@ ReactDOM.render(
           <Route path="transfers" element={<Transfers />} />
           <Route path="transfers-amount" element={<InputTransferAmount />} />
           <Route path="success-transaction" element={<SuccessTransaction />} />
+          <Route path="success-transfers" element={<SuccessTransfers />} />
           <Route path="receipt" element={<PrintReceipt />} />
           <Route path="take-card" element={<TakeCard />} />
           <Route path="withdrawal" element={<WithdrawCash />} />
