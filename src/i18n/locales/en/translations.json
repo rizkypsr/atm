@@ -1,0 +1,19 @@
+{
+    "inputPin": "Please Enter Your PIN",
+    "pressEnter": "Press \"Enter\" When You're Done",
+    "cancel": "Cancel",
+    "chooseTransaction": "Choose Transaction",
+    "withdraw": "Withdraw Cash",
+    "transfers": "Transfers",
+    "wrongPin": "Wrong PIN! {{ chance }}x Remaining Attempts Left",
+    "inputTransferDestination": "Enter the Transfer Destination Account Number\n(3 Digit Bank Code + Account Number)",
+    "inputTransferAmount": "Enter Amount of Transfers",
+    "successTransaction": "Successful Transaction",
+    "insufficientFunds": "Insufficient Funds",
+    "exceedingLimit": "Exceeding The Transfers Limit",
+    "printReceipt": "Printing Receipt...",
+    "takeCard": "Take Your Card",
+    "takeCardBtn": "Take the Card",
+    "inputWithdrawAmount": "Enter Withdrawal Amount",
+    "takeMoney": "Please Take Your Money"
+}

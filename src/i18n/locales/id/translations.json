@@ -1,0 +1,19 @@
+{
+    "inputPin": "Silahkan Masukkan PIN Anda",
+    "pressEnter": "Tekan \"Enter\" Jika Anda Sudah Yakin",
+    "cancel": "Batalkan",
+    "chooseTransaction": "Pilih Jenis Transaksi",
+    "withdraw": "Tarik Tunai",
+    "transfers": "Transfer",
+    "wrongPin": "Pin Anda Salah! Tersisa {{ chance }}x Percobaan",
+    "inputTransferDestination": "Masukkan Nomor Rekening Tujuan Transfer\n(3 Digit Kode Bank + No. Rek)",
+    "inputTransferAmount": "Masukan Jumlah Transfer",
+    "successTransaction": "Transaksi Berhasil",
+    "insufficientFunds": "Saldo Tidak Cukup",
+    "exceedingLimit": "Melebihi Batas Limit Transfer",
+    "printReceipt": "Mencetak Struk...",
+    "takeCard": "Silahkan Ambil Kartu Anda",
+    "takeCardBtn": "Ambil Kartu",
+    "inputWithdrawAmount": "Masukan Jumlah Penarikan",
+    "takeMoney": "Silahkan Ambil Uang Anda"
+}
