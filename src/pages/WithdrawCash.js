@@ -34,9 +34,9 @@ export const WithdrawCash = () => {
     }
   }
 
-  const checkBalance = amount <= balance
+  const checkBalance = parseInt(amount) <= parseInt(balance)
 
-  const checkLimit = amount <= limit
+  const checkLimit = parseInt(amount) <= parseInt(limit)
 
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen space-y-8">
