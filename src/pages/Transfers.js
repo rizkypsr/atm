@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom"
 
 export const Transfers = () => {
   const navigate = useNavigate()
+  const { setAccount } = useContext(AccountContext)
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
