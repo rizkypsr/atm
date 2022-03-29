@@ -11,7 +11,7 @@ import "flowbite"
 import { Transactions } from "./pages/Transactions"
 import { Transfers } from "./pages/Transfers"
 import { InputTransferAmount } from "./pages/InputTransferAmount"
-import { SuccessTransaction } from "./pages/SuccessTransaction"
+import { SuccessWithdrawal } from "./pages/SuccessWithdrawal"
 import { PrintReceipt } from "./pages/PrintReceipt"
 import { TakeCard } from "./pages/TakeCard"
 import { WithdrawCash } from "./pages/WithdrawCash"
@@ -29,7 +29,7 @@ ReactDOM.render(
           <Route path="transactions" element={<Transactions />} />
           <Route path="transfers" element={<Transfers />} />
           <Route path="transfers-amount" element={<InputTransferAmount />} />
-          <Route path="success-transaction" element={<SuccessTransaction />} />
+          <Route path="success-transaction" element={<SuccessWithdrawal />} />
           <Route path="success-transfers" element={<SuccessTransfers />} />
           <Route path="receipt" element={<PrintReceipt />} />
           <Route path="take-card" element={<TakeCard />} />
