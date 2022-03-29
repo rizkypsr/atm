@@ -53,7 +53,7 @@ export const WithdrawCash = () => {
   const checkMininmal = parseInt(amount) >= parseInt(min)
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen space-y-8">
+    <div className="flex flex-col items-center justify-center min-h-screen px-6 space-y-8">
       <Title name="inputWithdrawAmount" />
 
       {failBalance && <Alert title={t("insufficientFunds")} />}

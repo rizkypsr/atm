@@ -11,7 +11,7 @@ export const PrintReceipt = () => {
     setTimeout(() => {
       navigate("/take-card")
     }, 4000)
-  }, [])
+  }, [navigate])
   
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen space-y-8">

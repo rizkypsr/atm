@@ -35,7 +35,7 @@ export const InputPin = () => {
   }
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen space-y-8">
+    <div className="relative flex flex-col items-center justify-center min-h-screen px-6 space-y-8">
       {chance < 3 && <Alert title={t("wrongPin", { chance })} />}
 
       <Title name="inputPin" />

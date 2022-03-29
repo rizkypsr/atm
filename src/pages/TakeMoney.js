@@ -11,7 +11,7 @@ export const TakeMoney = () => {
     setTimeout(() => {
       navigate("/success-transaction")
     }, 5000)
-  }, [])
+  }, [navigate])
 
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen space-y-8">

@@ -12,13 +12,13 @@ export const SuccessTransfers = () => {
     setTimeout(() => {
       navigate("/receipt")
     }, 4000)
-  }, [])
+  }, [navigate])
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Title name="successTransaction" />
 
-      <hr className="w-full max-w-md my-3 border-2 border-dashed" />
+      <hr className="w-1/2 max-w-md my-3 border-2 border-dashed md:w-full" />
 
       <Title
         className="text-base"
