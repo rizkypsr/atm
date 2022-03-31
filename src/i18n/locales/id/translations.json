@@ -17,5 +17,6 @@
     "inputWithdrawAmount": "Masukan Jumlah Penarikan",
     "takeMoney": "Silahkan Ambil Uang Anda",
     "minimumTransactions": "Minimal Transaksi Adalah Rp.50.000",
-    "emptyInput": "Pastikan semua data terisi!"
+    "emptyInput": "Pastikan semua data terisi!",
+    "detailWithdrawal": "Jumlah Tarik Tunai adalah {{ amount }}"
 }

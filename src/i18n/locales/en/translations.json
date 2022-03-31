@@ -17,5 +17,6 @@
     "inputWithdrawAmount": "Enter Withdrawal Amount",
     "takeMoney": "Please Take Your Money",
     "minimumTransactions": "Minimum Transactions is Rp.50.000",
-    "emptyInput": "Make sure data is not empty!"
+    "emptyInput": "Make sure data is not empty!",
+    "detailWithdrawal": "Withdrawal Amount is {{ amount }}"
 }

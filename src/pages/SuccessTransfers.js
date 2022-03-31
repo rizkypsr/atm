@@ -2,11 +2,11 @@ import React, { useContext, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import { Title } from "../components/Title"
 import { AccountContext } from "../context/AccountContext"
+import CurrencyFormat from "react-currency-format"
 
 export const SuccessTransfers = () => {
   const navigate = useNavigate()
   const { account } = useContext(AccountContext)
-  const CurrencyFormat = require("react-currency-format")
 
   useEffect(() => {
     setTimeout(() => {

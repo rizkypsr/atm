@@ -5,12 +5,14 @@ import { TextInput } from "../components/TextInput"
 import { Alert } from "../components/Alert"
 import { useNavigate } from "react-router-dom"
 import { LocaleContext } from "../context/LocaleContext"
+import { WithdrawalContext } from "../context/WithdrawalContext"
 
 export const WithdrawCash = () => {
   const [amount, setAmount] = useState(0)
   const [failBalance, setFailBalance] = useState(false)
   const [failLimit, setFailLimit] = useState(false)
   const [failMinimial, setFailMinimal] = useState(false)
+  const { setWithdrawal } = useContext(WithdrawalContext)
 
   const balance = process.env.REACT_APP_BALANCE
   const limit = process.env.REACT_APP_LIMIT
@@ -18,7 +20,7 @@ export const WithdrawCash = () => {
 
   const navigate = useNavigate()
   const { t } = useContext(LocaleContext)
-  
+
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       if (!checkBalance) {
@@ -41,6 +43,8 @@ export const WithdrawCash = () => {
         setFailMinimal(true)
         return
       }
+
+      setWithdrawal(amount)
 
       navigate("/take-money")
     }
