@@ -10,7 +10,7 @@
     "inputTransferAmount": "Enter Amount of Transfers",
     "successTransaction": "Successful Transaction",
     "insufficientFunds": "Insufficient Funds",
-    "exceedingLimit": "Exceeding The Transfers Limit",
+    "exceedingLimit": "Exceeding The Transaction Limit",
     "printReceipt": "Printing Receipt...",
     "takeCard": "Take Your Card",
     "takeCardBtn": "Take the Card",

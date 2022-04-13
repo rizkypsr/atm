@@ -11,14 +11,17 @@ export const InputPin = () => {
   const [pin, setPin] = useState()
   const [chance, setChance] = useState(3)
   const { t } = useContext(LocaleContext)
+  let failedLoginAttempts = chance
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
-      if (chance > 0) {
+      
+      setChance(chance - 1)
+      failedLoginAttempts--
+
+      if (failedLoginAttempts > 0) {
         if (checkPin(pin)) {
           navigate("/transactions")
-        } else {
-          setChance(chance - 1)
         }
       } else {
         alert("Kartu Anda Terblokir")
